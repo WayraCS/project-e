@@ -690,5 +690,9 @@
         "node": ">= 0.8"
       }
     }
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
   }
 }
