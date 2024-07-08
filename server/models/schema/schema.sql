@@ -1,0 +1,23 @@
+CREATE TABLE league (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    owner TEXT NOT NULL,
+    dateOfEvent TEXT NOT NULL,
+    type TEXT NOT NULL
+);
+
+CREATE TABLE player (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    hittingHand TEXT NOT NULL,
+    gender TEXT NOT NULL,
+    primaryRole TEXT NOT NULL,
+    secondaryRole TEXT NOT NULL
+);
+
+CREATE TABLE elo (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    leagueId INTEGER NOT NULL,
+    playerId INTEGER NOT NULL,
+    value REAL NOT NULL
+);
